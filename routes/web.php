@@ -16,18 +16,5 @@ Route::get('/get-messages', [OpenAIController::class, 'getMessages']);
 Route::post('/process-csv', [OpenAIController::class, 'processCsv']);
 
 route::get('/', function () {
-
-    $chat = new Chat();
-
-    $response = $chat
-        ->systemMessage('Você é uma assistente especializada em dar dicas e tirar dúvidas acerca de registro de marca.')
-        ->send("Flikta é um bom nome para registro de marca no INPI?");
-
-    $chat->reply('Perfeito! Podes me dar mais detalhes do serviço?');
-
-    // dd($chat->messages());
-
-    return view('welcome', [
-        'response' => $chat->messages()
-    ]);
+    return view('welcome');
 });

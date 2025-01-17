@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Open AI</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,11 +19,13 @@
             </style>
         @endif
     </head>
-    <body class="h-full font-sans antialiased dark:bg-black dark:text-white/50">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50 grid place-items-center">
-            @foreach ($response as $message)
-                <li>{{ $message['content'] }}</li>
-            @endforeach
+    <body class="w-full h-full justify-center items-center p-12">
+        <div class="border-1 border-black-1">
+            <h1>Open AI</h1>
+
+            <h2>Informações iniciais</h2>
+
+
         </div>
     </body>
 </html>
