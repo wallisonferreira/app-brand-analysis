@@ -35,4 +35,19 @@ return [
         ],
     ],
 
+    // other configurations...
+    'openai' => [
+        'secret' => env('OPENAI_API_KEY'),
+    ],
+
+    'azure' => [
+        'endpoint_url' => env('AZURE_ENDPOINT_URL'),
+        'openai_api_key' => env('AZURE_OPENAI_API_KEY'),
+        'deployment_name' => env('AZURE_DEPLOYMENT_NAME'),
+        'search_endpoint' => env('AZURE_SEARCH_ENDPOINT'),
+        'search_key' => env('AZURE_SEARCH_KEY'),
+        'search_index' => env('AZURE_SEARCH_INDEX'),
+        'embedding_endpoint' => env('AZURE_EMBEDDING_ENDPOINT'),
+        'access_token' => env('AZURE_ACCESS_TOKEN'),
+    ],
 ];
